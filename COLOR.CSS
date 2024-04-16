@@ -1,0 +1,94 @@
+/* Reset básico para asegurar consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global del cuerpo de la página */
+body {
+    background-color: #fdfdfd; /* Fondo claro para una apariencia limpia */
+    color: #333; /* Color oscuro para el texto para facilitar la lectura */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente moderna y legible */
+    line-height: 1.6; /* Espaciado de línea para mejorar la legibilidad */
+}
+
+/* Estilos de la cabecera */
+header {
+    background: #005f5f; /* Color distintivo para la cabecera */
+    color: #fff;
+    padding: 1rem 0; /* Espacio arriba y abajo */
+    text-align: center; /* Centrar el contenido de la cabecera */
+}
+
+/* Logo del restaurante */
+.logo img {
+    width: 150px; /* Tamaño adecuado para el logo */
+}
+
+/* Estilos de navegación */
+nav {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el logo y los enlaces */
+    align-items: center; /* Alineación vertical */
+    padding: 0 2rem; /* Espacio a los lados */
+}
+
+/* Enlaces de navegación */
+nav a {
+    color: #fff;
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 1rem; /* Espacio entre enlaces */
+    transition: color 0.3s ease-in-out; /* Transición suave al cambiar de color */
+}
+
+nav a:hover {
+    color: #ffb900; /* Color al pasar el ratón por encima */
+}
+
+/* Estilos para la sección de bienvenida */
+.bienvenida {
+    background: url('bienvenida.jpg') no-repeat center center/cover; /* Imagen de fondo con ajuste de tamaño */
+    color: #fff;
+    height: 100vh; /* Altura completa de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para las secciones de contenido */
+section {
+    padding: 2rem; /* Espacio dentro de las secciones */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Íconos de redes sociales en el pie de página */
+.social-media i {
+    color: #ffb900; /* Color distintivo para los íconos */
+    margin: 0 0.5rem; /* Espacio alrededor de los íconos */
+    font-size: 1.5rem; /* Tamaño de los íconos */
+    transition: color 0.3s ease-in-out;
+}
+
+.social-media i:hover {
+    color: #fff; /* Color al pasar el ratón por encima */
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Los enlaces se apilan verticalmente en pantallas pequeñas */
+    }
+
+    .hamburguer {
+        display: block; /* Mostrar el menú hamburguesa en pantallas pequeñas */
+    }
+}
